@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #161616;
+}
+
+#game {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    background-color: #25c5df;
+}
+
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: limegreen;
+    border: 4px solid green;
+    position: relative;
+    left: 400px;
+    animation: blockAnimation 2s linear infinite;
+}
+
+@keyframes blockAnimation {
+    0%{left: 400px;}
+    100%{left: -100px;}
+}
+
+#hole {
+    width: 50px;
+    height: 150px;
+    background-color: #25c5df;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: blockAnimation 2s linear infinite;
+}
+
+#character {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
+
+#character img {
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+}
